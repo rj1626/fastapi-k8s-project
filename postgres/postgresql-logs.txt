@@ -1,0 +1,118 @@
+==== Logs from pod/postgresql-0 ====
+2025-04-08 14:01:14.027 UTC [1] LOG:  starting PostgreSQL 12.0 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+2025-04-08 14:01:14.027 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-04-08 14:01:14.027 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-04-08 14:01:14.036 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-04-08 14:01:14.090 UTC [19] LOG:  database system was shut down at 2025-04-08 13:59:53 UTC
+2025-04-08 14:01:14.102 UTC [1] LOG:  database system is ready to accept connections
+2025-04-08 14:18:47.092 UTC [30] ERROR:  relation "users" does not exist at character 13
+2025-04-08 14:18:47.092 UTC [30] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Ranjitha', 'jayappa.ranjitha@gmail.com', '\x674141414141426e3954424876466b44735764426c576159726f53654b7071534348456942563657596f634752366745535a7956694950614f345037615a7a6b7672377843673577475f735030657830306962374f523977553868763952796766773d3d'::bytea) RETURNING users.id
+2025-04-08 14:19:16.252 UTC [30] ERROR:  relation "users" does not exist at character 64
+2025-04-08 14:19:16.252 UTC [30] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 14:20:01.326 UTC [30] ERROR:  relation "users" does not exist at character 64
+2025-04-08 14:20:01.326 UTC [30] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 14:20:03.484 UTC [29] ERROR:  relation "users" does not exist at character 34
+2025-04-08 14:20:03.484 UTC [29] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 14:20:08.564 UTC [29] ERROR:  relation "users" does not exist at character 34
+2025-04-08 14:20:08.564 UTC [29] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 14:20:09.720 UTC [29] ERROR:  relation "users" does not exist at character 34
+2025-04-08 14:20:09.720 UTC [29] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 14:20:10.601 UTC [30] ERROR:  relation "users" does not exist at character 34
+2025-04-08 14:20:10.601 UTC [30] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 14:20:10.796 UTC [29] ERROR:  relation "users" does not exist at character 34
+2025-04-08 14:20:10.796 UTC [29] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:00:20.154 UTC [30] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:00:20.154 UTC [30] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:00:46.393 UTC [30] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:00:46.393 UTC [30] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 15:00:49.372 UTC [29] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:00:49.372 UTC [29] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 15:00:51.077 UTC [29] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:00:51.077 UTC [29] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 15:01:06.953 UTC [30] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:01:06.953 UTC [30] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:32:20.858 UTC [171] ERROR:  relation "users" does not exist at character 13
+2025-04-08 15:32:20.858 UTC [171] STATEMENT:  DELETE FROM users WHERE users.id = 1
+2025-04-08 15:33:17.791 UTC [171] ERROR:  relation "users" does not exist at character 13
+2025-04-08 15:33:17.791 UTC [171] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Alice', 'Alice1@gmail.com', '\x674141414141426e395547397258434c69355f776b627058577a4954474e616e776b66474153625561525142656949477a4d394a6f6c6d645950766b3564386952394e497142492d57586e6f6b743062356b4733354e42617a7a4e5466704a4e63413d3d'::bytea) RETURNING users.id
+2025-04-08 15:34:01.749 UTC [171] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:34:01.749 UTC [171] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 15:34:37.193 UTC [171] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:34:37.193 UTC [171] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users 
+	WHERE users.id = 'coount'
+2025-04-08 15:35:05.310 UTC [171] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:35:05.310 UTC [171] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:35:15.994 UTC [171] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:35:15.994 UTC [171] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:35:19.015 UTC [171] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:35:19.015 UTC [171] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:35:20.271 UTC [171] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:35:20.271 UTC [171] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:35:21.645 UTC [171] ERROR:  relation "users" does not exist at character 34
+2025-04-08 15:35:21.645 UTC [171] STATEMENT:  SELECT count(*) AS count_1 
+	FROM users
+2025-04-08 15:41:09.617 UTC [171] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:41:09.617 UTC [171] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+2025-04-08 15:41:13.898 UTC [171] ERROR:  relation "users" does not exist at character 64
+2025-04-08 15:41:13.898 UTC [171] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users
+
+
+
+==== Logs from pod/postgresql-1 ====
+2025-04-08 14:01:15.251 UTC [1] LOG:  starting PostgreSQL 12.0 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+2025-04-08 14:01:15.251 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-04-08 14:01:15.251 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-04-08 14:01:15.258 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-04-08 14:01:15.291 UTC [20] LOG:  database system was interrupted; last known up at 2025-04-08 14:01:14 UTC
+2025-04-08 14:01:15.335 UTC [20] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-04-08 14:01:15.341 UTC [20] LOG:  invalid record length at 0/1648B88: wanted 24, got 0
+2025-04-08 14:01:15.341 UTC [20] LOG:  redo is not required
+2025-04-08 14:01:15.366 UTC [1] LOG:  database system is ready to accept connections
+2025-04-08 15:34:39.090 UTC [104] ERROR:  invalid input syntax for type integer: "coount" at character 88
+2025-04-08 15:34:39.090 UTC [104] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users 
+	WHERE users.id = 'coount'
+2025-04-08 15:35:37.174 UTC [104] ERROR:  invalid input syntax for type integer: "docs" at character 88
+2025-04-08 15:35:37.174 UTC [104] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users 
+	WHERE users.id = 'docs'
+
+
+
+==== Logs from pod/postgresql-2 ====
+2025-04-08 14:01:17.104 UTC [1] LOG:  starting PostgreSQL 12.0 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+2025-04-08 14:01:17.104 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-04-08 14:01:17.104 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-04-08 14:01:17.111 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-04-08 14:01:17.149 UTC [20] LOG:  database system was interrupted; last known up at 2025-04-08 14:01:15 UTC
+2025-04-08 14:01:17.238 UTC [20] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-04-08 14:01:17.246 UTC [20] LOG:  invalid record length at 0/1648C00: wanted 24, got 0
+2025-04-08 14:01:17.246 UTC [20] LOG:  redo is not required
+2025-04-08 14:01:17.277 UTC [1] LOG:  database system is ready to accept connections
+2025-04-08 15:35:41.315 UTC [106] ERROR:  invalid input syntax for type integer: "docs" at character 88
+2025-04-08 15:35:41.315 UTC [106] STATEMENT:  SELECT users.id, users.name, users.email, users.password 
+	FROM users 
+	WHERE users.id = 'docs'
+
+
+

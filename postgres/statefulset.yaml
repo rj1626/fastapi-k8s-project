@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+ name: postgresql
+ namespace: standard
+spec:
+ selector:
+   matchLabels:
+     app: postgresql
+ serviceName: db
+ replicas: 3
+ template:
+   metadata:
+     labels:
+       app: postgresql
+   spec:
+     containers:
+     - name: postgresql
+       image: postgres:12.0-alpine
+       volumeMounts:
+        - name: postgres-volume
+          mountPath: /var/lib/postgresql/data/
+       ports:
+       - containerPort: 5432
+         name: postgresql
+       envFrom:
+            - secretRef:
+                name: postgresql-user
+     volumes:
+     - name: postgres-volume # Name of the volume for storing persistent data
+       persistentVolumeClaim:
+        claimName: pvc-standard
